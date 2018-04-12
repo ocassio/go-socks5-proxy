@@ -16,9 +16,9 @@ docker run -d --name socks5-proxy -p 1080:1080 -e USER=<USER> -e PASSWORD=<PASSW
 
 # Special thanks
 
-- The original idea. Actually this project is just a very lightweight variation of the serj's one:
+- The original idea. Actually, this project is just a very lightweight variation of the serj's one:
    https://github.com/serjs/socks5-server
-- SOCKS 5 server implementation for Go:
+- SOCKS5 server implementation for Go:
    https://github.com/armon/go-socks5
 - Article about building minimal Go containers with Docker by Nick Gauthier:
    https://blog.codeship.com/building-minimal-docker-containers-for-go-applications/
