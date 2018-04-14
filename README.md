@@ -1,10 +1,5 @@
-# Build
-The following command will perform a build of a static binary for Linux.
-The result of this build can be used by a scratch Docker image. This reduces container size drastically.
 
-```bash
-CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o server .
-```
+[![Docker Pulls](https://img.shields.io/docker/pulls/ocassio/go-socks5-proxy.svg)](https://hub.docker.com/r/ocassio/go-socks5-proxy/)
 
 # Docker image usage
 
@@ -12,6 +7,14 @@ You can start Docker container with the following command (make sure to replace 
 
 ```bash
 docker run -d --name socks5-proxy -p 1080:1080 -e USER=<USER> -e PASSWORD=<PASSWORD> ocassio/go-socks5-proxy
+```
+
+# Build
+The following command will perform a build of a static binary for Linux.
+The result of this build can be used by a scratch Docker image. This reduces container size drastically.
+
+```bash
+CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o server .
 ```
 
 # Special thanks
